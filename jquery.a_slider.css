@@ -1,0 +1,73 @@
+.a_slider .track,
+.a_slider .tick,
+.a_slider .bar,
+.a_slider .padding,
+.a_slider .wrapper,
+.a_slider .barWrapper
+	{
+		line-height: 0; 
+		text-indent: 0; 
+		padding: 0; 
+		margin: 0;		
+	}
+
+
+.a_slider 
+	{
+		line-height: 0; 
+		text-indent: 0; 	
+		box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+		position: relative;
+		overflow: hidden;
+	}	
+	
+.a_slider .padding,
+.a_slider .wrapper
+	{
+		float: left;
+	}
+
+.a_slider .wrapper
+	{
+		width: 100%;		
+		position: relative;		
+	}	
+	
+.a_slider .track
+	{
+		width: auto; 
+		background: orange; 
+		position: relative;
+	}
+	
+.a_slider .tick
+	{
+		background: orange; 
+		position: absolute;	
+		top: 0;
+		left: 0;
+		width: 1px;
+		background-clip: content-box;
+		-webkit-background-clip: content-box;
+	}
+
+	
+.a_slider .barWrapper
+	{
+		position: absolute;		
+		left: 0;
+		top: 0;
+	}	
+	
+.a_slider .bar
+	{
+		top: 0; 
+		left: 0;			
+		background: teal; 
+		position: absolute;	
+		opacity: 0.5;
+	}
+	
+	

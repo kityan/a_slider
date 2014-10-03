@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<link rel='stylesheet' href='jquery.a_slider.css' type='text/css' media='all' />
+<script type="text/javascript" src="jquery.a_slider.js"></script>
+<style>
+	div {margin: 50px 0px 50px 0px;}
+</style>
+</head>
+<body style="padding: 50px;">
+
+<div id="demo1"></div>
+<div id="demo2"></div>
+<div id="demo3"></div>
+<div id="demo4"></div>
+<div id="demo5"></div>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#demo1').a_slider();
+	$('#demo2').a_slider({width: '50%', initalTick: 3}).css('background', 'yellow');
+	$('#demo3, #demo4').a_slider({width: '400px', initalTick: 2});
+	$('#demo5').a_slider({width: '80%', track: {height: '1px'}, bar: {side: '20px'}, initalTick: 4, ticks: 20});
+
+});
+</script>
+
+
+</body>
+</html>
+
+
