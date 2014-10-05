@@ -52,7 +52,7 @@ $.fn.a_slider = function(data) {
 		function _onDocumentMouseMove(e, a){
 			if (globalDragObject){
 				e.preventDefault();
-				if (!isTouchDevice && !e.buttons){	// предотвращение "залипания" drag-а в случае, если клавиша мыши была отпущена вне окна
+				if ((typeof e.buttons == 'undefined' && e.which == 0) || (e.buttons == 0)){	// предотвращение "залипания" drag-а в случае, если клавиша мыши была отпущена не над drag-объектом
 					globalDragObject = undefined;
 				} else {
 					_moveBar(e.pageX);
