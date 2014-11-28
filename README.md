@@ -12,6 +12,4 @@ Tested:
 Safari 5 / iOS
 Firefox 32 / Windows 7
 
-Website: 
-
-http://kityan.github.io/a_slider/
+Live demo: http://kityan.github.io/a_slider/
